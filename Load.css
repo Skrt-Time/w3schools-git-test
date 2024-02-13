@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: azure;
+}
+h2{
+    position: relative;
+    font-size: 14vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px red;
+
+}
+h2::before{
+    content: "loading...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    border-right: 2px solid rebeccapurple;/*Pour mettre le barre verticale*/
+    color: red;
+    overflow: hidden;   
+    animation: remplissage 10s linear infinite ;/*Nom de l'animation, durée, boucle*/
+}
+/*paramètrage de l'animation*/
+@keyframes remplissage{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
