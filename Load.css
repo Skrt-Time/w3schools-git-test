@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: solid
 
 }
 body{
@@ -27,7 +28,7 @@ h2::before{
     border-right: 2px solid rebeccapurple;/*Pour mettre le barre verticale*/
     color: red;
     overflow: hidden;   
-    animation: remplissage 10s linear infinite ;/*Nom de l'animation, durée, boucle*/
+    animation: remplissage 15s linear infinite ;/*Nom de l'animation, durée, boucle*/
 }
 /*paramètrage de l'animation*/
 @keyframes remplissage{
