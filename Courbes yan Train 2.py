@@ -5,8 +5,9 @@ import matplotlib.pyplot as plt
 def f(x):
     return np.sin(x) * np.exp(1 - np.abs(x))
 
+
 # Définir l'intervalle de x
-x = np.linspace(0, 8, 100)
+x = np.linspace(0, 10, 200)
 
 # Dessiner la courbe
 plt.plot(x, f(x))
